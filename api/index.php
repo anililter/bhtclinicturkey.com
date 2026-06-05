@@ -82,8 +82,8 @@ if (empty($cleanPath)) {
 $absoluteTargetFile = dirname(__DIR__) . '/' . $targetFile;
 
 if (file_exists($absoluteTargetFile) && is_file($absoluteTargetFile)) {
-    // Change directory to the root directory so that relative paths in includes work correctly
-    chdir(dirname(__DIR__));
+    // Change directory to the target file's directory so that relative paths in includes work correctly
+    chdir(dirname($absoluteTargetFile));
     
     // Set server variables so PHP application behaves correctly
     $_SERVER['SCRIPT_FILENAME'] = $absoluteTargetFile;
