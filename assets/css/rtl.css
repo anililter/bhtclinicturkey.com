@@ -1,0 +1,864 @@
+/* ============================================
+   HEC Turkey - RTL (Right-to-Left) Stylesheet
+   Arabic Language Support
+   ============================================ */
+
+/* ============================================
+   1. Base RTL Configuration
+   ============================================ */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] body {
+    text-align: right;
+}
+
+/* ============================================
+   2. Layout and Container
+   ============================================ */
+[dir="rtl"] .container,
+[dir="rtl"] .container-fluid,
+[dir="rtl"] .container-narrow {
+    direction: rtl;
+}
+
+/* ============================================
+   3. Header and Navigation
+   ============================================ */
+
+/* Logo */
+[dir="rtl"] .logo {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .logo-img {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+
+
+[dir="rtl"] .nav-list {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-link.active::after {
+    left: auto;
+    right: 0;
+}
+
+/* Dropdown Menu */
+[dir="rtl"] .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .dropdown-menu a {
+    text-align: right;
+}
+
+/* Language Switcher */
+[dir="rtl"] .language-switcher {
+    direction: ltr;
+}
+
+[dir="rtl"] .lang-dropdown {
+    left: 0;
+    right: auto;
+}
+
+
+
+/* Mobile Menu */
+[dir="rtl"] .nav-menu {
+    right: auto;
+    left: -100%;
+}
+
+[dir="rtl"] .nav-menu.active {
+    left: 0;
+    right: auto;
+}
+
+[dir="rtl"] .nav-overlay {
+    left: auto;
+    right: 0;
+}
+
+/* ============================================
+   4. Hero Section
+   ============================================ */
+[dir="rtl"] .hero-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .hero-text {
+    text-align: right;
+}
+
+[dir="rtl"] .hero-badge {
+    align-self: flex-end;
+}
+
+[dir="rtl"] .hero-btns {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-stats {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-badge-float {
+    left: 30px;
+    right: auto;
+}
+
+/* Scroll Indicator */
+[dir="rtl"] .scroll-indicator {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* Shapes */
+[dir="rtl"] .shape-1 {
+    right: auto;
+    left: -200px;
+}
+
+[dir="rtl"] .shape-2 {
+    left: auto;
+    right: -100px;
+}
+
+[dir="rtl"] .shape-3 {
+    left: auto;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* ============================================
+   5. Buttons
+   ============================================ */
+[dir="rtl"] .btn {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .btn i {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Button Icons - Reverse Chevrons */
+[dir="rtl"] .btn i.fa-chevron-right::before {
+    content: "\f053"; /* chevron-left */
+}
+
+[dir="rtl"] .btn i.fa-chevron-left::before {
+    content: "\f054"; /* chevron-right */
+}
+
+[dir="rtl"] .btn i.fa-arrow-right::before {
+    content: "\f060"; /* arrow-left */
+}
+
+[dir="rtl"] .btn i.fa-arrow-left::before {
+    content: "\f061"; /* arrow-right */
+}
+
+/* ============================================
+   6. Services Section
+   ============================================ */
+[dir="rtl"] .services-grid {
+    direction: rtl;
+}
+
+[dir="rtl"] .service-card {
+    text-align: right;
+}
+
+[dir="rtl"] .badge {
+    left: 30px;
+    right: auto;
+}
+
+[dir="rtl"] .service-features {
+    text-align: right;
+}
+
+[dir="rtl"] .service-features li {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+[dir="rtl"] .service-features i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .service-link {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .service-link:hover {
+    gap: 12px;
+}
+
+[dir="rtl"] .service-link i {
+    transform: rotate(180deg);
+}
+
+/* ============================================
+   7. Why Us Section
+   ============================================ */
+[dir="rtl"] .why-us-wrapper {
+    direction: rtl;
+}
+
+[dir="rtl"] .features-list {
+    text-align: right;
+}
+
+[dir="rtl"] .feature-item {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+[dir="rtl"] .feature-icon {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .feature-content {
+    text-align: right;
+}
+
+[dir="rtl"] .cta-box {
+    text-align: right;
+}
+
+[dir="rtl"] .image-stats {
+    left: auto;
+    right: 30px;
+}
+
+[dir="rtl"] .stat-card {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .stat-card i {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+/* ============================================
+   8. Process Section
+   ============================================ */
+[dir="rtl"] .process-timeline {
+    direction: rtl;
+}
+
+[dir="rtl"] .process-item {
+    text-align: right;
+}
+
+[dir="rtl"] .process-content {
+    text-align: right;
+}
+
+/* ============================================
+   9. Testimonials Section
+   ============================================ */
+[dir="rtl"] .testimonials-slider {
+    direction: rtl;
+}
+
+[dir="rtl"] .testimonial-card {
+    text-align: right;
+}
+
+[dir="rtl"] .stars {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .testimonial-author {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+[dir="rtl"] .testimonial-author img {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+/* ============================================
+   10. Certifications Section
+   ============================================ */
+[dir="rtl"] .certifications-grid {
+    direction: rtl;
+}
+
+[dir="rtl"] .certification-card {
+    text-align: right;
+}
+
+/* ============================================
+   11. FAQ Section
+   ============================================ */
+[dir="rtl"] .faq-wrapper {
+    direction: rtl;
+}
+
+[dir="rtl"] .faq-question {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+[dir="rtl"] .faq-question i {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+[dir="rtl"] .faq-answer {
+    text-align: right;
+}
+
+/* ============================================
+   12. CTA Section
+   ============================================ */
+[dir="rtl"] .cta-wrapper {
+    direction: rtl;
+}
+
+[dir="rtl"] .cta-content {
+    text-align: right;
+}
+
+[dir="rtl"] .cta-buttons {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .cta-section::before {
+    right: auto;
+    left: -150px;
+}
+
+[dir="rtl"] .cta-section::after {
+    left: auto;
+    right: -100px;
+}
+
+/* ============================================
+   13. Forms
+   ============================================ */
+[dir="rtl"] .consultation-form {
+    text-align: right;
+}
+
+[dir="rtl"] .form-group {
+    text-align: right;
+}
+
+[dir="rtl"] .form-label {
+    text-align: right;
+}
+
+[dir="rtl"] .form-label.required::after {
+    content: '* ';
+    margin-right: 0;
+    margin-left: 0;
+}
+
+[dir="rtl"] .form-row {
+    direction: rtl;
+}
+
+[dir="rtl"] .form-group input,
+[dir="rtl"] .form-group select,
+[dir="rtl"] .form-group textarea {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="rtl"] .form-group select {
+    background-position: left 15px center;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+[dir="rtl"] .input-unit {
+    left: 15px;
+    right: auto;
+}
+
+[dir="rtl"] .input-with-unit input {
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+[dir="rtl"] .checkbox-label {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+[dir="rtl"] .checkbox-label input[type="checkbox"] {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .form-error {
+    text-align: right;
+}
+
+[dir="rtl"] .form-success {
+    text-align: right;
+    border-left: none;
+    border-right: 4px solid var(--success-color);
+}
+
+/* ============================================
+   14. Modal
+   ============================================ */
+[dir="rtl"] .modal-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .modal-header {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .modal-body {
+    text-align: right;
+}
+
+/* ============================================
+   15. Footer
+   ============================================ */
+[dir="rtl"] .footer {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-top {
+    direction: rtl;
+}
+
+[dir="rtl"] .footer-col {
+    text-align: right;
+}
+
+[dir="rtl"] .social-links {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-links {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-links a:hover {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+[dir="rtl"] .contact-info {
+    text-align: right;
+}
+
+[dir="rtl"] .contact-info li {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .contact-info i {
+    margin-left: 12px;
+    margin-right: 0;
+    text-align: center;
+}
+
+[dir="rtl"] .footer-bottom {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-bottom-links {
+    flex-direction: row-reverse;
+}
+
+/* ============================================
+   16. WhatsApp Button
+   ============================================ */
+[dir="rtl"] .whatsapp-btn {
+    left: 30px;
+    right: auto;
+}
+
+/* ============================================
+   17. Icons - RTL Specific Adjustments
+   ============================================ */
+
+/* Chevron Icons */
+[dir="rtl"] .fa-chevron-right::before {
+    content: "\f053"; /* chevron-left */
+}
+
+[dir="rtl"] .fa-chevron-left::before {
+    content: "\f054"; /* chevron-right */
+}
+
+/* Arrow Icons */
+[dir="rtl"] .fa-arrow-right::before {
+    content: "\f060"; /* arrow-left */
+}
+
+[dir="rtl"] .fa-arrow-left::before {
+    content: "\f061"; /* arrow-right */
+}
+
+/* Angle Icons */
+[dir="rtl"] .fa-angle-right::before {
+    content: "\f104"; /* angle-left */
+}
+
+[dir="rtl"] .fa-angle-left::before {
+    content: "\f105"; /* angle-right */
+}
+
+/* Long Arrow Icons */
+[dir="rtl"] .fa-long-arrow-right::before {
+    content: "\f177"; /* long-arrow-left */
+}
+
+[dir="rtl"] .fa-long-arrow-left::before {
+    content: "\f178"; /* long-arrow-right */
+}
+
+/* Caret Icons */
+[dir="rtl"] .fa-caret-right::before {
+    content: "\f0d9"; /* caret-left */
+}
+
+[dir="rtl"] .fa-caret-left::before {
+    content: "\f0da"; /* caret-right */
+}
+
+/* ============================================
+   18. Responsive RTL Adjustments
+   ============================================ */
+
+/* Tablet and Mobile RTL */
+@media (max-width: 991px) {
+    [dir="rtl"] .nav-menu {
+        left: -100%;
+        right: auto;
+        width: 320px;
+        max-width: 85vw;
+    }
+
+    [dir="rtl"] .nav-menu.active {
+        left: 0;
+        right: auto;
+    }
+
+    [dir="rtl"] .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    [dir="rtl"] .nav-item {
+        width: 100%;
+    }
+
+    [dir="rtl"] .nav-link {
+        text-align: left;
+    }
+
+    [dir="rtl"] .nav-link.active::after {
+        right: 0;
+        left: auto;
+    }
+
+    [dir="rtl"] .dropdown .nav-link i {
+        transform: rotate(180deg);
+    }
+
+    [dir="rtl"] .dropdown-menu {
+        margin-right: 20px;
+        margin-left: 0;
+        text-align: right;
+        display: none;
+    }
+
+    [dir="rtl"] .dropdown-menu a {
+        flex-direction: row-reverse;
+    }
+
+    [dir="rtl"] .hero-content {
+        text-align: center;
+    }
+
+    [dir="rtl"] .hero-badge {
+        align-self: center;
+    }
+
+    [dir="rtl"] .hero-badge-float {
+        right: 20px;
+        left: auto;
+    }
+
+    [dir="rtl"] .why-us-content {
+        text-align: center;
+    }
+
+    [dir="rtl"] .feature-item {
+        text-align: right;
+    }
+
+    [dir="rtl"] .cta-wrapper {
+        text-align: center;
+    }
+
+    [dir="rtl"] .footer-top {
+        text-align: center;
+    }
+
+    [dir="rtl"] .footer-links a:hover {
+        padding-right: 0;
+    }
+}
+
+/* Mobile Specific RTL */
+@media (max-width: 767px) {
+    [dir="rtl"] .nav-menu {
+        width: 280px;
+    }
+
+    [dir="rtl"] .hero-badge-float {
+        right: 20px;
+        left: auto;
+    }
+
+    [dir="rtl"] .image-stats {
+        right: 20px;
+        left: auto;
+    }
+
+    [dir="rtl"] .whatsapp-btn {
+        left: 25px;
+        right: auto;
+    }
+}
+
+/* Small Mobile RTL */
+@media (max-width: 575px) {
+    [dir="rtl"] .nav-menu {
+        width: 260px;
+    }
+
+    [dir="rtl"] .hero-badge-float {
+        right: 15px;
+        left: auto;
+    }
+
+    [dir="rtl"] .whatsapp-btn {
+        left: 20px;
+        right: auto;
+    }
+}
+
+/* ============================================
+   19. List and Bullet Points RTL
+   ============================================ */
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+[dir="rtl"] ul li,
+[dir="rtl"] ol li {
+    text-align: right;
+}
+
+/* Custom List Markers */
+[dir="rtl"] ul li::marker {
+    unicode-bidi: isolate;
+}
+
+[dir="rtl"] ol li::marker {
+    unicode-bidi: isolate;
+}
+
+/* ============================================
+   20. Text Alignment Utilities RTL
+   ============================================ */
+[dir="rtl"] .text-left {
+    text-align: right;
+}
+
+[dir="rtl"] .text-right {
+    text-align: left;
+}
+
+[dir="rtl"] .text-center {
+    text-align: center;
+}
+
+/* ============================================
+   21. Margin and Padding RTL
+   ============================================ */
+
+/* Margin Left/Right Swap */
+[dir="rtl"] .ml-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+[dir="rtl"] .mr-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+/* Padding Left/Right Swap */
+[dir="rtl"] .pl-0 { padding-left: 0; padding-right: 0; }
+[dir="rtl"] .pr-0 { padding-right: 0; padding-left: 0; }
+
+/* ============================================
+   22. Flex Direction RTL
+   ============================================ */
+[dir="rtl"] .flex-row {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .flex-row-reverse {
+    flex-direction: row;
+}
+
+/* ============================================
+   23. Grid RTL
+   ============================================ */
+[dir="rtl"] .grid {
+    direction: rtl;
+}
+
+/* ============================================
+   24. Tooltips and Popovers RTL
+   ============================================ */
+[dir="rtl"] .tooltip {
+    text-align: right;
+}
+
+[dir="rtl"] .popover {
+    text-align: right;
+}
+
+/* ============================================
+   25. Breadcrumbs RTL
+   ============================================ */
+[dir="rtl"] .breadcrumb {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 0;
+    padding-left: 0.5rem;
+}
+
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item {
+    padding-right: 0.5rem;
+    padding-left: 0;
+}
+
+/* ============================================
+   26. Animations RTL
+   ============================================ */
+
+/* Slide Animations */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+[dir="rtl"] .slide-in-right {
+    animation: slideInLeft 0.3s ease;
+}
+
+[dir="rtl"] .slide-in-left {
+    animation: slideInRight 0.3s ease;
+}
+
+/* ============================================
+   27. Typography RTL Specific
+   ============================================ */
+[dir="rtl"] {
+    font-family: var(--font-primary), 'Tajawal', 'Cairo', 'Noto Sans Arabic', sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+    font-family: var(--font-heading), 'Tajawal', 'Cairo', 'Noto Sans Arabic', sans-serif;
+}
+
+/* ============================================
+   28. Number and Date Format RTL
+   ============================================ */
+[dir="rtl"] .number,
+[dir="rtl"] .date,
+[dir="rtl"] .time {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+/* Keep numbers left-to-right */
+[dir="rtl"] .stat-number,
+[dir="rtl"] .price,
+[dir="rtl"] .percentage {
+    direction: ltr;
+    display: inline-block;
+}
+
+/* ============================================
+   29. Form Elements RTL Specific
+   ============================================ */
+[dir="rtl"] input[type="tel"],
+[dir="rtl"] input[type="email"],
+[dir="rtl"] input[type="url"] {
+    direction: ltr;
+    text-align: left;
+}
+
+/* ============================================
+   30. Accessibility RTL
+   ============================================ */
+[dir="rtl"] .skip-to-main {
+    right: 0;
+    left: auto;
+}
+
+[dir="rtl"] .skip-to-main:focus {
+    right: 0;
+    left: auto;
+}
+
+/* ============================================
+   END OF RTL STYLESHEET
+   ============================================ */
