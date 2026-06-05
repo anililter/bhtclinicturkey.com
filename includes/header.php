@@ -102,7 +102,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="nav-wrapper">
                     <!-- Logo -->
                     <a href="<?= langUrl('/') ?>" class="logo">
-                            <img style="width: 140px;" src="/assets/images/logo.png" alt="<?= $config['site']['name'] ?>" class="logo-img">
+                            <img style="width: 140px;" src="/assets/images/bht_original_logo.png" alt="<?= $config['site']['name'] ?>" class="logo-img">
                     </a>
 
                     <!-- Desktop Navigation -->
